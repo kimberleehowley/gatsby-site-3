@@ -5,13 +5,9 @@
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
+  
   "dependencies": {
     "css-loader": "^2.1.1",
     "file-loader": "^3.0.1",
@@ -44,8 +40,5 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
-  },
-  "scripts": {
-    "deploy": "gatsby build && gh-pages -d public -b master"
   }
 }
